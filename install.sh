@@ -10,3 +10,6 @@ vim -u NONE -c "helptags vim-fugitive/doc" -c q
 
 # Install xClip
 sudo apt-get install xclip
+
+# Install tree
+sudo apt-get install tree
