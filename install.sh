@@ -8,8 +8,18 @@ cd ~/.vim/bundle && git clone https://github.com/tpope/vim-fugitive
 cd ~/.vim/bundle && git clone https://github.com/scrooloose/syntastic
 vim -u NONE -c "helptags vim-fugitive/doc" -c q
 
+# Install Java
+sudo apt install default-jdk
+sudo apt install maven
+
 # Install xClip
 sudo apt-get install xclip
 
 # Install tree
 sudo apt-get install tree
+
+# Copy DotFiles
+cp DotFiles/.vimrc ~/.vimrc
+cp DotFiles/.git-completion.bash ~/.git-completion.bash
+cp DotFiles/.gitconfig ~/.gitconfig
+cp DotFiles/.bash_aliases ~/.bash_aliases
