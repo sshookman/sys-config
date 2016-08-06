@@ -18,6 +18,9 @@ sudo apt-get install xclip
 # Install tree
 sudo apt-get install tree
 
+# Install Sudocabulary
+curl https://raw.githubusercontent.com/badarsh2/Sudocabulary/master/script.sh | bash
+
 # Copy DotFiles
 cp DotFiles/.vimrc ~/.vimrc
 cp DotFiles/.git-completion.bash ~/.git-completion.bash
