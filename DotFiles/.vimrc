@@ -1,15 +1,46 @@
-set number
-set tabstop=4
-colorscheme slate
+
+""""""""""""PATHOGEN CONFIG""""""""""""
 execute pathogen#infect()
 call pathogen#helptags()
-autocmd vimenter * NERDTree
 
+""""""""""""NERDTree CONFIG"""""""""""" 
+autocmd vimenter * NERDTree
+let NERDTreeMinimalUI = 1
+let g:NERDTreeWinSize = 30
+let NERDTreeHighlightCursorline = 1
+
+"""""""""""SYNTASTIC CONFIG"""""""""""
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list = 2
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
+
+""""""""""""GENERAL CONFIG"""""""""""""
+colorscheme slate
+syntax on
+
+set number
+set autoread
+
+""""""""""INDENTATION CONFIG""""""""""
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set autoindent
+set smartindent
+set smarttab
+set expandtab
+
+""""""""""TURN OFF SWAP FILE""""""""""
+set noswapfile
+set nobackup
+set nowb
+
+""""""""""""SCROLL CONFIG"""""""""""""
+set scrolloff=8
+set sidescrolloff=15
+set sidescroll=1
