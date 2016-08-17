@@ -26,3 +26,7 @@ cp DotFiles/.vimrc ~/.vimrc
 cp DotFiles/.git-completion.bash ~/.git-completion.bash
 cp DotFiles/.gitconfig ~/.gitconfig
 cp DotFiles/.bash_aliases ~/.bash_aliases
+
+# Wifi Fix
+sudo cp wifi-resume.service /etc/systemd/system/wifi-resume.service
+sudo systemctl enable wifi-resume.service
