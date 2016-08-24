@@ -11,8 +11,11 @@ alias Dkill="docker ps -aq | xargs docker kill | xargs docker rm"
 # Golem
 alias Gbuild="docker build -t seanshookman/golem ."
 alias Grun="docker run --name golem -d -p 1127:1127 seanshookman/golem"
-
 alias Gplay="telnet localhost 1127"
 
 # Telnet
 alias tn="telnet"
+
+# Weather
+alias weather="curl wttr.in/Chicago"
+alias moon="curl wttr.in/Moon"
