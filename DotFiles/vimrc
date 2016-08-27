@@ -44,3 +44,7 @@ set nowb
 set scrolloff=8
 set sidescrolloff=15
 set sidescroll=1
+
+"""""""""""""KEY MAPPINGS"""""""""""""
+map <F2> :echo 'Current time is ' . strftime('%c')<CR>
+map <F3> :!ctags -R --totals=yes .<CR>
