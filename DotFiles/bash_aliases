@@ -3,6 +3,9 @@ alias Mpack="mvn clean package"
 alias Mcheck="mvn pmd:pmd pmd:cpd"
 alias Mcover="mvn cobertura:cobertura"
 
+# CTags
+alias Ctagr="ctags -R --totals=yes ."
+
 # Docker
 alias Dbuild="docker build"
 alias Drun="docker run"

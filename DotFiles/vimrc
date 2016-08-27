@@ -20,7 +20,7 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 """"""""""""GENERAL CONFIG"""""""""""""
-colorscheme slate
+colorscheme delek
 syntax on
 
 set number
