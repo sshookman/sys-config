@@ -8,6 +8,8 @@
     title_inactive_bg_color = "#000010"
     window_state = fullscreen
     inactive_color_offset = 0.25
+    handle_size = 1
+    always_split_with_profile = True
 
 [keybindings]
     go_up = <Alt>k
@@ -19,6 +21,38 @@
     resize_left = <Ctrl><Shift>h
     resize_right = <Ctrl><Shift>l
     layout_launcher = 
+
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = True
+      last_active_term = d07aac1b-ad4f-47ca-bb77-3cef7a194b4d
+      last_active_window = True
+      maximised = False
+      order = 0
+      parent = ""
+      position = 0:0
+      size = 1600, 900
+      title = sean@CodePoet: ~/Code/SysConfig
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 657
+      ratio = 0.8
+      type = VPaned
+    [[[terminal2]]]
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = d07aac1b-ad4f-47ca-bb77-3cef7a194b4d
+    [[[terminal3]]]
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 3b0ef710-1d02-4b7a-a0bb-616f64f78db0
 
 [profiles]
     [[default]]
