@@ -14,6 +14,11 @@ sudo apt install maven
 sudo apt-get install xclip
 sudo apt-get install tree
 
+# Install Terminator
+sudo add-apt-repository ppa:gnome-terminator
+sudo apt-get update
+sudo apt-get install terminator
+
 # Install Sudocabulary
 curl https://raw.githubusercontent.com/badarsh2/Sudocabulary/master/script.sh | bash
 
