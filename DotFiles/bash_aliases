@@ -1,24 +1,36 @@
+# Git
+alias gs="git status -s"
+alias ga="git add -A"
+alias gc="git commit"
+alias gl="git log"
+alias gll="git log --oneline --graph"
+alias gpull="git pull"
+alias gpush="git push"
+
 # Maven
-alias Mpack="mvn clean package"
-alias Mcheck="mvn pmd:pmd pmd:cpd"
-alias Mcover="mvn cobertura:cobertura"
+alias mpack="mvn clean package"
+alias mcheck="mvn pmd:pmd pmd:cpd"
+alias mcover="mvn cobertura:cobertura"
 
 # CTags
-alias Ctagr="ctags -R --totals=yes ."
+alias ctagr="ctags -R --totals=yes ."
 
 # Docker
-alias Dbuild="docker build"
-alias Drun="docker run"
-alias Dkill="docker ps -aq | xargs docker kill | xargs docker rm"
+alias dbuild="docker build"
+alias drun="docker run"
+alias dkill="docker ps -aq | xargs docker kill | xargs docker rm"
 
 # Golem
-alias Gbuild="docker build -t seanshookman/golem ."
-alias Grun="docker run --name golem -d -p 1127:1127 seanshookman/golem"
-alias Gplay="telnet localhost 1127"
+alias gbuild="docker build -t seanshookman/golem ."
+alias grun="docker run --name golem -d -p 1127:1127 seanshookman/golem"
+alias gplay="telnet localhost 1127"
 
 # Telnet
 alias tn="telnet"
 
 # Weather
-alias weather="curl wttr.in/Chicago"
+alias weather="curl wttr.in/Orland%20Park"
 alias moon="curl wttr.in/Moon"
+
+# Clock
+alias clock="date +%H:%M"
