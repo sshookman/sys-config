@@ -57,3 +57,4 @@
 [profiles]
     [[default]]
         visible_bell = True
+        scrollbar_position = disabled
