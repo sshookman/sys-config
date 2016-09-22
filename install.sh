@@ -13,6 +13,7 @@ sudo apt install default-jdk
 sudo apt install maven
 sudo apt-get install xclip
 sudo apt-get install tree
+sudo apt-get install glances
 
 # Install Terminator
 sudo add-apt-repository ppa:gnome-terminator

@@ -23,7 +23,7 @@
     layout_launcher = 
 
 [layouts]
-  [[default]]
+  [[simple_split]]
     [[[child0]]]
       fullscreen = True
       last_active_term = d07aac1b-ad4f-47ca-bb77-3cef7a194b4d

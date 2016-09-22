@@ -28,6 +28,9 @@ alias gplay="telnet localhost 1127"
 # Telnet
 alias tn="telnet"
 
+# Glances
+alias glance="glances -t 10"
+
 # Weather
 alias weather="curl wttr.in/Orland%20Park"
 alias moon="curl wttr.in/Moon"
