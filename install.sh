@@ -23,6 +23,11 @@ sudo apt-get install terminator
 # Install Sudocabulary
 curl https://raw.githubusercontent.com/badarsh2/Sudocabulary/master/script.sh | bash
 
+# Install Sound Switcher
+sudo apt-add-repository ppa:yktooo/ppa
+sudo apt-get update
+sudo apt-get install indicator-sound-switcher
+
 # Link DotFiles
 ./linkDotFiles.sh
 
