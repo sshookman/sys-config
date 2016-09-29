@@ -31,6 +31,9 @@ alias tn="telnet"
 # Glances
 alias glance="glances -t 10"
 
+# WeeChat
+alias irc="weechat"
+
 # Weather
 alias weather="curl wttr.in/Orland%20Park"
 alias moon="curl wttr.in/Moon"
