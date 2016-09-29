@@ -23,10 +23,11 @@ sudo apt-get install weechat
 curl https://raw.githubusercontent.com/badarsh2/Sudocabulary/master/script.sh | bash
 ./linkDotFiles.sh
 
-# Install Toolbar Applications
+# Configure Ubuntu
 sudo apt-add-repository ppa:yktooo/ppa
 sudo apt-get update
 sudo apt-get install indicator-sound-switcher
+sudo apt-get install unity-tweak-tool
 
 # Fix WiFi Bug
 sudo cp Service/wifi-resume.service /etc/systemd/system/wifi-resume.service
