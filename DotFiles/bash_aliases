@@ -1,6 +1,7 @@
 # Folders
 alias code="cd ~/Code"
 alias config="cd ~/Code/SysConfig"
+alias sandbox="cd ~/Code/Sandbox"
 
 # Git
 alias gs="git status -s"
@@ -26,10 +27,8 @@ alias dbuild="docker build"
 alias drun="docker run"
 alias dkill="docker ps -aq | xargs docker kill | xargs docker rm"
 
-# Telnet
-alias tn="telnet"
-
 # System
+alias tn="telnet"
 alias glance="glances -t 10"
 alias weather="curl wttr.in/Orland%20Park"
 alias moon="curl wttr.in/Moon"
