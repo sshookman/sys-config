@@ -1,3 +1,7 @@
+# Folders
+alias code="cd ~/Code"
+alias config="cd ~/Code/SysConfig"
+
 # Git
 alias gs="git status -s"
 alias ga="git add -A"
@@ -5,7 +9,9 @@ alias gc="git commit"
 alias gl="git log"
 alias gll="git log --oneline --graph"
 alias gpull="git pull"
+alias gpullr="git pull --rebase"
 alias gpush="git push"
+alias gwipe="git reset --hard && git clean -df"
 
 # Maven
 alias mpack="mvn clean package"
@@ -20,23 +26,19 @@ alias dbuild="docker build"
 alias drun="docker run"
 alias dkill="docker ps -aq | xargs docker kill | xargs docker rm"
 
-# Golem
-alias gbuild="docker build -t seanshookman/golem ."
-alias grun="docker run --name golem -d -p 1127:1127 seanshookman/golem"
-alias gplay="telnet localhost 1127"
-
 # Telnet
 alias tn="telnet"
 
-# Glances
+# System
 alias glance="glances -t 10"
-
-# WeeChat
-alias irc="weechat"
-
-# Weather
 alias weather="curl wttr.in/Orland%20Park"
 alias moon="curl wttr.in/Moon"
-
-# Clock
 alias clock="date +%H:%M"
+
+# Chat
+alias irc="weechat"
+
+# Project: Golem
+alias gbuild="docker build -t seanshookman/golem ."
+alias grun="docker run --name golem -d -p 1127:1127 seanshookman/golem"
+alias gplay="telnet localhost 1127"
