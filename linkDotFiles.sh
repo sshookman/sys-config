@@ -1,5 +1,5 @@
 path=$PWD
-files="bash_aliases git-completion.bash gitconfig vimrc"
+files="bash_aliases git-completion.bash gitconfig profile vimrc"
 weechat_files="alias.conf aspell.conf charset.conf exec.conf irc.conf logger.conf plugins.conf relay.conf script.conf sec.conf trigger.conf weechat.conf xfer.conf"
 
 for file in $files; do
