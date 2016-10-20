@@ -22,4 +22,3 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 PATH="$HOME/Library/sqlite3:$PATH"
-export GOPATH=$HOME/Code/Sandbox/Go
