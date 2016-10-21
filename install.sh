@@ -20,6 +20,7 @@ sudo apt-get install xclip
 sudo apt-get install tree
 sudo apt-get install glances
 sudo apt-get install weechat
+sudo apt-get install golang-go
 curl https://raw.githubusercontent.com/badarsh2/Sudocabulary/master/script.sh | bash
 ./linkDotFiles.sh
 
