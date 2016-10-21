@@ -123,14 +123,14 @@ chmod +x ~/.vocab
 
 # CUSTOM CONFIG
 
-# Prompt
+# Prompt Config
 # get current branch in git repo
 function parse_git_branch() {
     BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
     if [ ! "${BRANCH}" == "" ]
     then
         STAT=`parse_git_dirty`
-        echo "[${BRANCH}${STAT}]"
+        echo " [${BRANCH}${STAT}]"
     else
         echo ""
     fi
@@ -171,5 +171,5 @@ function parse_git_dirty {
     fi
 }
 
-export PS1="\[\e[35m\]\A\[\e[m\] \[\e[35m\]\u\[\e[m\]\[\e[35m\]@\[\e[m\]\[\e[35m\]\h\[\e[m\] \[\e[35m\]\W\[\e[m\] \[\e[36m\]\`parse_git_branch\`\[\e[m\]\[\e[35m\]>\[\e[m\] "
+export PS1="\[\e[35m\]\A\[\e[m\] \[\e[35m\]\u\[\e[m\]\[\e[35m\]@\[\e[m\]\[\e[35m\]\h\[\e[m\] \[\e[35m\]\W\[\e[m\]\[\e[36m\]\`parse_git_branch\`\[\e[m\]\[\e[35m\]>\[\e[m\] "
 
