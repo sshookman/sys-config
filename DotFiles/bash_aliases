@@ -36,6 +36,7 @@ alias clock="date +%H:%M"
 
 # Chat
 alias irc="weechat"
+alias tg="~/Code/tg/bin/telegram-cli"
 
 # Project: Golem
 alias gbuild="docker build -t seanshookman/golem ."
