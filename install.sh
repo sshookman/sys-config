@@ -1,3 +1,6 @@
+# Setup Code Directory
+mkdir ~/Code
+
 # Install Terminator
 sudo add-apt-repository ppa:gnome-terminator
 sudo apt-get update
@@ -22,6 +25,7 @@ sudo apt-get install glances
 sudo apt-get install weechat
 sudo apt-get install golang-go
 curl https://raw.githubusercontent.com/badarsh2/Sudocabulary/master/script.sh | bash
+./install-telegram.sh
 ./linkDotFiles.sh
 
 # Configure Ubuntu
