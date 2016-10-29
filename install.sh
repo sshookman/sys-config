@@ -29,6 +29,7 @@ sudo apt-add-repository ppa:yktooo/ppa
 sudo apt-get update
 sudo apt-get install indicator-sound-switcher
 sudo apt-get install unity-tweak-tool
+sudo apt-get install synapse
 
 # Fix WiFi Bug
 sudo cp Service/wifi-resume.service /etc/systemd/system/wifi-resume.service
