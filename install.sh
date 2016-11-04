@@ -19,6 +19,7 @@ vim -u NONE -c "helptags vim-fugitive/doc" -c q
 # Configure Terminal
 sudo apt-get install default-jdk
 sudo apt-get install maven
+sudo apt-get install gradle
 sudo apt-get install xclip
 sudo apt-get install tree
 sudo apt-get install glances
