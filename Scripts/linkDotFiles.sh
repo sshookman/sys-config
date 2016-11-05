@@ -9,7 +9,7 @@ done
 
 for wfile in $weechat_files; do
     echo "Linking Weechat Config $wfile"
-    ln -sf $path/../DotFiles/weechat/$wfile ~/.weechat/.$wfile
+    ln -sf $path/../DotFiles/weechat/$wfile ~/.weechat/$wfile
 done
 
 echo "Linking terminator-config"
