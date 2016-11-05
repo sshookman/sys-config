@@ -4,14 +4,14 @@ weechat_files="alias.conf aspell.conf charset.conf exec.conf irc.conf logger.con
 
 for file in $files; do
     echo "Linking Dotfile $file"
-    ln -sf $path/DotFiles/$file ~/.$file
+    ln -sf $path/../DotFiles/$file ~/.$file
 done
 
 for wfile in $weechat_files; do
     echo "Linking Weechat Config $wfile"
-    ln -sf $path/DotFiles/weechat/$wfile ~/.weechat/.$wfile
+    ln -sf $path/../DotFiles/weechat/$wfile ~/.weechat/.$wfile
 done
 
 echo "Linking terminator-config"
 mkdir -p ~/.config/terminator
-ln -sf $path/DotFiles/terminator_config ~/.config/terminator/config
+ln -sf $path/../DotFiles/terminator_config ~/.config/terminator/config
