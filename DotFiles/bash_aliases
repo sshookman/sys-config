@@ -19,13 +19,19 @@ alias mpack="mvn clean package"
 alias mcheck="mvn pmd:pmd pmd:cpd"
 alias mcover="mvn cobertura:cobertura"
 
+# Gradle
+alias gdrun="gradle clean run"
+alias gdbrun="gradle clean bootRun"
+alias gdtest="gradle clean test"
+alias gdreport="gradle clean test jacocoTestReport"
+
 # CTags
 alias ctagr="ctags -R --totals=yes ."
 
 # Docker
 alias dbuild="docker build"
 alias drun="docker run"
-alias dkill="docker ps -aq | xargs docker kill | xargs docker rm"
+alias dkill="docker ps -q | xargs docker kill && docker ps -aq | xargs docker rm"
 
 # System
 alias tn="telnet"
