@@ -21,6 +21,7 @@ alias mcover="mvn cobertura:cobertura"
 
 # Gradle
 alias gdclean="gradle clean"
+alias gdbuild="gradle build"
 alias gdrun="gradle clean run"
 alias gdbrun="gradle clean bootRun"
 alias gdtest="gradle clean test"
@@ -45,7 +46,6 @@ alias clock="date +%H:%M"
 alias irc="weechat"
 alias tg="~/Code/tg/bin/telegram-cli -N"
 
-# Project: Golem
-alias gbuild="docker build -t seanshookman/golem ."
-alias grun="docker run --name golem -d -p 1127:1127 seanshookman/golem"
-alias gplay="telnet localhost 1127"
+# Project Scripts
+alias pbuild="./scripts/build.sh"
+alias prun="./scripts/run.sh"
