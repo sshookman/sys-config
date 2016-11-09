@@ -20,6 +20,7 @@ alias mcheck="mvn pmd:pmd pmd:cpd"
 alias mcover="mvn cobertura:cobertura"
 
 # Gradle
+alias gdclean="gradle clean"
 alias gdrun="gradle clean run"
 alias gdbrun="gradle clean bootRun"
 alias gdtest="gradle clean test"
