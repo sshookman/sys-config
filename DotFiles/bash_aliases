@@ -38,7 +38,7 @@ alias ctagr="ctags -R --totals=yes ."
 # Docker
 alias dbuild="docker build"
 alias drun="docker run"
-alias dkill="echo 'Killing Containers' && docker ps -q | xargs docker kill && echo 'Removing Containers' && docker ps -aq | xargs docker rm"
+alias dkill="echo 'Killing Containers' ; docker ps -q | xargs docker kill ; echo 'Removing Containers' ; docker ps -aq | xargs docker rm"
 
 # System
 alias tn="telnet"
