@@ -28,7 +28,9 @@ alias gdbuild="gradle build"
 alias gdrun="gradle clean run"
 alias gdbrun="gradle clean bootRun"
 alias gdtest="gradle clean test"
-alias gdreport="gradle clean test jacocoTestReport"
+alias gdcov="gradle clean test jacocoTestReport"
+alias gdmut="gradle clean test pitest"
+alias gdrep="gradle clean test jacocoTestReport pitest"
 
 # CTags
 alias ctagr="ctags -R --totals=yes ."
