@@ -18,11 +18,13 @@ alias gpush="git push"
 alias gwipe="git reset --hard && git clean -df"
 
 # Maven
+alias m="mvn"
 alias mpack="mvn clean package"
 alias mcheck="mvn pmd:pmd pmd:cpd"
 alias mcover="mvn cobertura:cobertura"
 
 # Gradle
+alias gd="gradle"
 alias gdclean="gradle clean"
 alias gdbuild="gradle build"
 alias gdrun="gradle clean run"
@@ -36,9 +38,13 @@ alias gdrep="gradle clean test jacocoTestReport pitest"
 alias ctagr="ctags -R --totals=yes ."
 
 # Docker
+alias dimg="docker images"
+alias dstats="docker stats"
+alias dlog="docker logs"
 alias dbuild="docker build"
 alias drun="docker run"
 alias dkill="echo 'Killing Containers' ; docker ps -q | xargs docker kill ; echo 'Removing Containers' ; docker ps -aq | xargs docker rm"
+alias dwipe="echo ‘Removing Docker Images’ ; docker images -q | xargs docker rmi"
 
 # System
 alias tn="telnet"
