@@ -43,8 +43,11 @@ alias dstats="docker stats"
 alias dlog="docker logs"
 alias dbuild="docker build"
 alias drun="docker run"
-alias dkill="echo 'Killing Containers' ; docker ps -q | xargs docker kill ; echo 'Removing Containers' ; docker ps -aq | xargs docker rm"
-alias dwipe="echo ‘Removing Docker Images’ ; docker images -q | xargs docker rmi"
+alias dps="docker ps"
+alias dpsa="docker ps -a"
+alias dkill="echo 'Killing Container(s)' ; docker ps -q | xargs docker kill ; echo 'Removing Container(s)' ; docker ps -aq | xargs docker rm"
+alias dwipe="echo ‘Removing Docker Image(s)’ ; docker images -q | xargs docker rmi"
+alias dclean="echo 'Removing Exited Container(s)' ; docker ps -qf 'status=exited' | xargs docker rm ; echo 'Removing Dangling Image(s)' ; docker images -qf 'dangling=true' | xargs docker rmi"
 
 # System
 alias tn="telnet"
