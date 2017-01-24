@@ -63,6 +63,8 @@ alias tg="~/Code/tg/bin/telegram-cli -N"
 # Project Scripts
 alias pbuild="./scripts/build.sh"
 alias prun="./scripts/run.sh"
+alias ptail="./scripts/tail.sh"
+alias pstop="./scripts/stop.sh"
 
 # Compression
 alias zip="tar -cvf"
