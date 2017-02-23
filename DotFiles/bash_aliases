@@ -16,6 +16,8 @@ alias gpull="git pull"
 alias gpullr="git pull --rebase"
 alias gpush="git push"
 alias gwipe="git reset --hard && git clean -df"
+alias gdiff="git diff"
+alias gdiffs="git diff --staged"
 
 # Maven
 alias m="mvn"
