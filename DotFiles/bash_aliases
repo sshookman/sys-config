@@ -23,6 +23,11 @@ alias gstl="git stash list"
 alias gsta="git stash apply"
 alias gstp="git stash pop"
 alias gstd="git stash drop"
+alias gp="git format-patch master --stdout >"
+alias gps="git apply --stat"
+alias gpc="git apply --check"
+alias gpa="git apply"
+alias gco="git co"
 
 # Maven
 alias m="mvn"
