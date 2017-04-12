@@ -63,6 +63,9 @@ alias dkill="echo 'Killing Container(s)' ; docker ps -q | xargs docker kill ; ec
 alias dwipe="echo ‘Removing Docker Image(s)’ ; docker images -q | xargs docker rmi"
 alias dclean="echo 'Removing Exited Container(s)' ; docker ps -qf 'status=exited' | xargs docker rm ; echo 'Removing Dangling Image(s)' ; docker images -qf 'dangling=true' | xargs docker rmi"
 
+# Resin
+alias rlogin="ssh root@resin.local -p22222"
+
 # System
 alias tn="telnet"
 alias glance="glances -t 10"
