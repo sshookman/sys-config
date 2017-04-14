@@ -1,28 +1,29 @@
 [global_config]
-    font = Fixed 10
-    foreground_color = "#EEEEEE"
-    background_color = "#000000"
-    title_transmit_fg_color = "#000000"
-    title_transmit_bg_color = "#EEEEEE"
-    title_inactive_fg_color = "#000000"
-    title_inactive_bg_color = "#000000"
-    window_state = fullscreen
-    inactive_color_offset = 0.25
-    handle_size = 1
-    always_split_with_profile = True
-
+  always_split_with_profile = True
+  handle_size = 1
+  inactive_color_offset = 0.25
+  title_inactive_bg_color = "#000000"
+  title_transmit_bg_color = "#EEEEEE"
+  title_transmit_fg_color = "#000000"
+  window_state = fullscreen
 [keybindings]
-    go_up = <Alt>k
-    go_down = <Alt>j
-    go_left = <Alt>h
-    go_right = <Alt>l
-    resize_up = <Ctrl><Shift>k
-    resize_down = <Ctrl><Shift>j
-    resize_left = <Ctrl><Shift>h
-    resize_right = <Ctrl><Shift>l
-    layout_launcher = 
-
+  go_down = <Alt>j
+  go_left = <Alt>h
+  go_right = <Alt>l
+  go_up = <Alt>k
+  layout_launcher = ""
+  resize_down = <Ctrl><Shift>j
+  resize_left = <Ctrl><Shift>h
+  resize_right = <Ctrl><Shift>l
+  resize_up = <Ctrl><Shift>k
 [layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
   [[simple_split]]
     [[[child0]]]
       fullscreen = True
@@ -53,8 +54,11 @@
       profile = default
       type = Terminal
       uuid = 3b0ef710-1d02-4b7a-a0bb-616f64f78db0
-
+[plugins]
 [profiles]
-    [[default]]
-        visible_bell = True
-        scrollbar_position = disabled
+  [[default]]
+    background_darkness = 0.86
+    background_image = None
+    background_type = transparent
+    scrollbar_position = hidden
+    visible_bell = True
