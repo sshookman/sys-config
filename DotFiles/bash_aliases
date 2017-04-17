@@ -65,7 +65,7 @@ alias dclean="echo 'Removing Exited Container(s)' ; docker ps -qf 'status=exited
 
 # Resin
 alias rlogin="ssh root@resin.local -p22222"
-alias rdeploy="rdt push resin.local -s ."
+alias rdeploy="rdt push resin.local -s . --skip-logs"
 
 # System
 alias tn="telnet"
