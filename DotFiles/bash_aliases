@@ -49,7 +49,7 @@ alias gdmut="gradle clean test pitest"
 alias gdrep="gradle clean test jacocoTestReport pitest"
 
 # CTags
-alias ctagr="ctags -R --totals=yes ."
+alias ctagr="ctags -R --totals=yes src/"
 
 # Docker
 alias dimg="docker images"
