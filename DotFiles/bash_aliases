@@ -88,3 +88,6 @@ alias pstop="./scripts/stop.sh"
 alias zip="tar -cvf"
 alias gzip="tar -cvzf"
 alias unzip="tar -xvf"
+
+# Droplet
+alias dplogin="ssh root@162.243.62.166"
