@@ -7,7 +7,7 @@ cd ~/Code
 git clone git@github.com:sshookman/SysConfig.git
 
 # Setup System Config
-cd ~/Code/SysConfig/scripts
+cd ~/Code/SysConfig/Scripts
 ./install.sh
 ./linkDotFiles.sh
 ./fix-wifi.sh
