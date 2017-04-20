@@ -6,6 +6,7 @@ sudo apt-get install tree
 sudo apt-get install glances
 sudo apt-get install weechat
 sudo apt-get install python
+sudo apt-get install docker.io
 
 ./install-sudocabulary.sh
 ./install-vim.sh
