@@ -30,6 +30,7 @@ syntax on
 
 set number
 set autoread
+set hlsearch
 
 """"""""""INDENTATION CONFIG""""""""""
 set tabstop=4
