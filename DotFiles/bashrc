@@ -189,7 +189,7 @@ function parse_git_status_color {
     elif [ "${staged}" == "0" ]; then
         color=$LIGHT_YELLOW
     elif [ "${ahead}" == "0" ]; then
-        color=$LIGHT_BLUE
+        color=$LIGHT_MAGENTA
     fi
     
     echo $color
