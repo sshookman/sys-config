@@ -125,10 +125,10 @@ chmod +x ~/.vocab
 ~/.vocab
 
 # CUSTOM CONFIG
-RESET_BOLD="\e[21m"
+RESET="\e[0m"
+
 BOLD="\e[1m"
 
-RESET_COLOR="\e[0m"
 RED="\e[31m"
 GREEN="\e[32m"
 YELLOW="\e[33m"
@@ -195,5 +195,5 @@ function parse_git_status_color {
     echo $color
 }
 
-export PS1="$LIGHT_GREEN\u$COLOR_RESET@$LIGHT_BLUE\h$COLOR_RESET \w\`parse_git_branch\`$COLOR_RESET > "
+export PS1="$LIGHT_GREEN\u$RESET@$LIGHT_BLUE\h$RESET \w\`parse_git_branch\`$RESET > "
 
