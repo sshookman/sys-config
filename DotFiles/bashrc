@@ -124,7 +124,14 @@ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/ga
 chmod +x ~/.vocab
 ~/.vocab
 
-# CUSTOM CONFIG
+#" CUSTOM CONFIG
+COLOR_RED="\033[0;31m"
+COLOR_YELLOW="\033[0;33m"
+COLOR_GREEN="\033[0;32m"
+COLOR_OCHRE="\033[38;5;95m"
+COLOR_BLUE="\033[0;34m"
+COLOR_WHITE="\033[0;37m"
+COLOR_RESET="\033[0m"
 
 # Prompt Config
 # get current branch in git repo
@@ -132,38 +139,33 @@ function parse_git_branch() {
     BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
     if [ ! "${BRANCH}" == "" ]
     then
-        STAT=`parse_git_dirty`
-        echo " [${BRANCH}${STAT}]"
+        COLOR=`parse_git_status_color`
+        echo -e $COLOR "[${BRANCH}${STAT}]" $COLOR_RESET
     else
         echo ""
     fi
 }
 
 # get current status of git repo
-function parse_git_dirty {
+function parse_git_status_color {
     status=`git status 2>&1 | tee`
     untracked=`echo -n "${status}" 2> /dev/null | grep "Untracked files" &> /dev/null; echo "$?"`
     unstaged=`echo -n "${status}" 2> /dev/null | grep "Changes not staged for commit:" &> /dev/null; echo "$?"`
     staged=`echo -n "${status}" 2> /dev/null | grep "Changes to be committed:" &> /dev/null; echo "$?"`
     ahead=`echo -n "${status}" 2> /dev/null | grep "Your branch is ahead of" &> /dev/null; echo "$?"`
-    bits=''
+    color=$COLOR_GREEN
+
     if [ "${untracked}" == "0" ]; then
-        bits="?${bits}"
+        color=$COLOR_RED
+    elif [ "${unstaged}" == "0" ]; then
+        color=$COLOR_RED
+    elif [ "${staged}" == "0" ]; then
+        color=$COLOR_YELLOW
+    elif [ "${ahead}" == "0" ]; then
+        color=$COLOR_BLUE
     fi
-    if [ "${unstaged}" == "0" ]; then
-        bits="!${bits}"
-    fi
-    if [ "${staged}" == "0" ]; then
-        bits="*${bits}"
-    fi
-    if [ "${ahead}" == "0" ]; then
-        bits="+${bits}"
-    fi
-    if [ ! "${bits}" == "" ]; then
-        echo " ${bits}"
-    else
-        echo ""
-    fi
+    
+    echo $color
 }
 
 export PS1="\[\e[35m\]\A\[\e[m\] \[\e[35m\]\u\[\e[m\]\[\e[35m\]@\[\e[m\]\[\e[35m\]\h\[\e[m\] \[\e[35m\]\W\[\e[m\]\[\e[36m\]\`parse_git_branch\`\[\e[m\]\[\e[35m\]>\[\e[m\] "
