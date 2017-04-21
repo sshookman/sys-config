@@ -31,6 +31,7 @@ syntax on
 set number
 set autoread
 set hlsearch
+set autoread
 
 """"""""""INDENTATION CONFIG""""""""""
 set tabstop=4
@@ -53,4 +54,5 @@ set sidescroll=1
 
 """""""""""""KEY MAPPINGS"""""""""""""
 map <F2> :echo 'Current time is ' . strftime('%c')<CR>
-map <F3> :!ctags -R --totals=yes .<CR>
+map <F3> :!ctags -R --totals=yes /src<CR>
+map <F4> :edit<CR>
