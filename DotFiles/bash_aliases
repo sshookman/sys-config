@@ -29,6 +29,7 @@ alias gps="git apply --stat"
 alias gpc="git apply --check"
 alias gpa="git apply"
 alias gco="git co"
+alias glog="git log --graph  --decorate --source --all --oneline"
 
 # Maven
 alias m="mvn"
