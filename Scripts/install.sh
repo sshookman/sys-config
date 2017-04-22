@@ -7,6 +7,7 @@ sudo apt-get install glances
 sudo apt-get install weechat
 sudo apt-get install python
 sudo apt-get install docker.io
+sudo apt-get install npm
 
 ./install-sudocabulary.sh
 ./install-vim.sh
