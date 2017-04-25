@@ -80,6 +80,7 @@ alias irc="weechat"
 alias tg="~/Code/tg/bin/telegram-cli -N"
 
 # Project Scripts
+alias ptest="./scripts/test.sh"
 alias pbuild="./scripts/build.sh"
 alias prun="./scripts/run.sh"
 alias ptail="./scripts/tail.sh"

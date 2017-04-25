@@ -56,3 +56,7 @@ set sidescroll=1
 map <F2> :echo 'Current time is ' . strftime('%c')<CR>
 map <F3> :!ctags -R --totals=yes /src<CR>
 map <F4> :edit<CR>
+map <F5> :!./scripts/test.sh<CR>
+map <F6> :!./scripts/build.sh<CR>
+map <F7> :!./scripts/run.sh<CR>
+map <F8> :!./scripts/stop.sh<CR>
