@@ -9,6 +9,7 @@ sudo apt-get install python
 sudo apt-get install docker.io
 sudo apt-get install nodejs-legacy
 sudo apt-get install npm
+sudo apt-get install exuberant-ctags
 
 ./install-sudocabulary.sh
 ./install-vim.sh
