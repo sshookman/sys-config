@@ -169,7 +169,7 @@ function parse_git_branch() {
         COLOR=`parse_git_status_color`
         echo -e $COLOR [${PWD##*/} "|" $BRANCH]
     else
-        echo -e $LIGHT_YELLOW $PWD
+        echo -e $LIGHT_GREEN $PWD
     fi
 }
 
