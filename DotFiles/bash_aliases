@@ -28,7 +28,7 @@ alias gp="git format-patch master --stdout >"
 alias gps="git apply --stat"
 alias gpc="git apply --check"
 alias gpa="git apply"
-alias gco="git co"
+alias gco="git checkout"
 alias glog="git log --graph  --decorate --source --all --oneline"
 
 # Maven
