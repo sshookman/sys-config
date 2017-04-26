@@ -54,7 +54,7 @@ set sidescroll=1
 
 """""""""""""KEY MAPPINGS"""""""""""""
 map <F2> :echo 'Current time is ' . strftime('%c')<CR>
-map <F3> :!ctags -R --totals=yes /src<CR>
+map <F3> :!ctags -R --totals=yes ./src<CR>
 map <F4> :edit<CR>
 map <F5> :!./scripts/test.sh<CR>
 map <F6> :!./scripts/build.sh<CR>
