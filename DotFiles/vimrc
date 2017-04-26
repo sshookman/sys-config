@@ -60,3 +60,5 @@ map <F5> :!./scripts/test.sh<CR>
 map <F6> :!./scripts/build.sh<CR>
 map <F7> :!./scripts/run.sh<CR>
 map <F8> :!./scripts/stop.sh<CR>
+map <F9> :Errors<CR>
+map <F10> :SyntasticReset<CR>
