@@ -9,7 +9,7 @@ alias sandbox="cd ~/Code/Sandbox"
 # Git
 alias gs="git status -s"
 alias ga="git add -A"
-alias gc="git commit"
+alias gc="git commit -m"
 alias gl="git log"
 alias gll="git log --oneline --graph"
 alias gpull="git pull"
