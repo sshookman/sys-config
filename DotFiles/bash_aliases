@@ -1,12 +1,44 @@
-# System
-alias reload=". ~/.bashrc"
+##########
+# SYSTEM #
+##########
 
-# Folders
+## General 
+alias reload=". ~/.bashrc"
+alias tn="telnet"
+alias glance="glances -t 10"
+alias rmf="rm -rf"
+
+## Compression
+alias zip="tar -cvf"
+alias gzip="tar -cvzf"
+alias unzip="tar -xvf"
+
+## Directories
 alias code="cd ~/Code"
 alias config="cd ~/Code/SysConfig"
 alias sandbox="cd ~/Code/Sandbox"
 
-# Git
+## World
+alias clock="date +%H:%M"
+alias weather="curl wttr.in/Orland%20Park"
+alias moon="curl wttr.in/Moon"
+
+## Chat
+alias irc="weechat"
+alias tg="~/Code/tg/bin/telegram-cli -N"
+
+########
+# CODE #
+########
+
+## Project
+alias ptest="./scripts/test.sh"
+alias pbuild="./scripts/build.sh"
+alias prun="./scripts/run.sh"
+alias ptail="./scripts/tail.sh"
+alias pstop="./scripts/stop.sh"
+
+## Git
 alias gs="git status -s"
 alias ga="git add -A"
 alias gc="git commit -m"
@@ -14,6 +46,8 @@ alias gl="git log"
 alias gll="git log --oneline --graph"
 alias gpull="git pull"
 alias gpullr="git pull --rebase"
+alias gspull="git add -A; git stash save; git pull; git stash pop; git add -A"
+alias gspullr="git add -A; git stash save; git pull --rebase; git stash pop; git add -A"
 alias gpush="git push"
 alias greset="git reset HEAD~"
 alias gwipe="git reset --hard && git clean -df"
@@ -31,13 +65,13 @@ alias gpa="git apply"
 alias gco="git checkout"
 alias glog="git log --graph  --decorate --source --all --oneline"
 
-# Maven
+## Maven
 alias m="mvn"
 alias mpack="mvn clean package"
 alias mcheck="mvn pmd:pmd pmd:cpd"
 alias mcover="mvn cobertura:cobertura"
 
-# Gradle
+## Gradle
 alias gd="gradle"
 alias gdclean="gradle clean"
 alias gdbuild="gradle build"
@@ -49,10 +83,14 @@ alias gdcov="gradle clean test jacocoTestReport"
 alias gdmut="gradle clean test pitest"
 alias gdrep="gradle clean test jacocoTestReport pitest"
 
-# CTags
+## CTags
 alias ctagr="ctags -R --totals=yes src/"
 
-# Docker
+##########
+# SERVER #
+########## 
+
+## Docker
 alias dimg="docker images"
 alias dstats="docker stats"
 alias dlog="docker logs"
@@ -64,32 +102,9 @@ alias dkill="echo 'Killing Container(s)' ; docker ps -q | xargs docker kill ; ec
 alias dwipe="echo ‘Removing Docker Image(s)’ ; docker images -q | xargs docker rmi"
 alias dclean="echo 'Removing Exited Container(s)' ; docker ps -qf 'status=exited' | xargs docker rm ; echo 'Removing Dangling Image(s)' ; docker images -qf 'dangling=true' | xargs docker rmi"
 
-# Resin
+## Resin
 alias rlogin="ssh root@resin.local -p22222"
 alias rdeploy="rdt push resin.local -s . --skip-logs"
 
-# System
-alias tn="telnet"
-alias glance="glances -t 10"
-alias weather="curl wttr.in/Orland%20Park"
-alias moon="curl wttr.in/Moon"
-alias clock="date +%H:%M"
-
-# Chat
-alias irc="weechat"
-alias tg="~/Code/tg/bin/telegram-cli -N"
-
-# Project Scripts
-alias ptest="./scripts/test.sh"
-alias pbuild="./scripts/build.sh"
-alias prun="./scripts/run.sh"
-alias ptail="./scripts/tail.sh"
-alias pstop="./scripts/stop.sh"
-
-# Compression
-alias zip="tar -cvf"
-alias gzip="tar -cvzf"
-alias unzip="tar -xvf"
-
-# Droplet
+## Droplet
 alias dplogin="ssh root@162.243.62.166"
