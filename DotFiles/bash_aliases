@@ -89,6 +89,13 @@ alias goi="go install"
 ## CTags
 alias ctagr="ctags -R --totals=yes src/"
 
+## Todo
+alias td="todo"
+alias tda="todo add"
+alias tdx="todo complete"
+alias tdc="todo clean"
+alias tdr="todo remove"
+
 ##########
 # SERVER #
 ########## 
