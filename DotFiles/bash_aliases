@@ -92,7 +92,7 @@ alias ctagr="ctags -R --totals=yes src/"
 ## SparkTask
 alias st="sparktask list"
 alias stadd="sparktask add"
-alias stmark="sparktask complete"
+alias stmark="sparktask mark"
 alias stclean="sparktask clean"
 alias stremove="sparktask remove"
 alias sthelp="sparktask help"
