@@ -89,13 +89,13 @@ alias goi="go install"
 ## CTags
 alias ctagr="ctags -R --totals=yes src/"
 
-## Todo
-alias td="todo list"
-alias tdadd="todo add"
-alias tdmark="todo complete"
-alias tdclean="todo clean"
-alias tdremove="todo remove"
-alias tdhelp="todo help"
+## SparkTask
+alias st="sparktask list"
+alias stadd="sparktask add"
+alias stmark="sparktask complete"
+alias stclean="sparktask clean"
+alias stremove="sparktask remove"
+alias sthelp="sparktask help"
 
 ##########
 # SERVER #
