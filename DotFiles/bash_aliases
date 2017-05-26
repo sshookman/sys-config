@@ -91,10 +91,10 @@ alias ctagr="ctags -R --totals=yes src/"
 
 ## Todo
 alias td="todo"
-alias tda="todo add"
-alias tdx="todo complete"
-alias tdc="todo clean"
-alias tdr="todo remove"
+alias tdadd="todo add"
+alias tdmark="todo complete"
+alias tdclean="todo clean"
+alias tdremove="todo remove"
 
 ##########
 # SERVER #
