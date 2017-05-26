@@ -90,11 +90,12 @@ alias goi="go install"
 alias ctagr="ctags -R --totals=yes src/"
 
 ## Todo
-alias td="todo"
+alias td="todo list"
 alias tdadd="todo add"
 alias tdmark="todo complete"
 alias tdclean="todo clean"
 alias tdremove="todo remove"
+alias tdhelp="todo help"
 
 ##########
 # SERVER #
