@@ -60,5 +60,8 @@
     background_darkness = 0.86
     background_image = None
     background_type = transparent
+    cursor_color = "#ff9900"
+    foreground_color = "#f0f0f0"
+    palette = "#2e3436:#ad3131:#74b239:#f5b33a:#8f69b2:#a869b2:#b2697d:#ff8a4a:#555753:#c10000:#5cbb00:#c88100:#5f00b7:#b0009d:#b00052:#ff7600"
     scrollbar_position = hidden
     visible_bell = True
