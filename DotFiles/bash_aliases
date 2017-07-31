@@ -27,6 +27,9 @@ alias moon="curl wttr.in/Moon"
 alias irc="weechat"
 alias tg="~/Code/tg/bin/telegram-cli -N"
 
+## XClip
+alias clip="xclip -selection clipboard"
+
 ########
 # CODE #
 ########
