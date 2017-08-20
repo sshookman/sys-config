@@ -107,7 +107,11 @@ alias cmbuild="codemage build"
 alias cmrun="codemage run"
 alias cmtail="codemage tail"
 alias cmstop="codemage stop"
-alias cmcast="codemage cast"
+alias cmlearn="codemage learn"
+alias cmforget="codemage forget"
+alias cmread="codemage read"
+alias cmenchant="codemage enchant"
+alias cmsummon="codemage summon"
 
 ##########
 # SERVER #
