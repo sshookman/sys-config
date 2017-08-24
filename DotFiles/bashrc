@@ -197,4 +197,4 @@ function parse_git_status_color {
     echo $color
 }
 
-export PS1="$LIGHT_CYAN\u$RESET@$LIGHT_BLUE\h$RESET\`parse_git_branch\`$RESET > "
+export PS1="$LIGHT_CYAN\u$RESET@$LIGHT_CYAN\h$RESET\`parse_git_branch\`$RESET > "
