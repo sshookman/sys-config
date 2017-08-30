@@ -101,17 +101,7 @@ alias stremove="sparktask remove"
 alias sthelp="sparktask help"
 
 ## CodeMage
-alias cm="codemage"
-alias cmtest="codemage test"
-alias cmbuild="codemage build"
-alias cmrun="codemage run"
-alias cmtail="codemage tail"
-alias cmstop="codemage stop"
-alias cmlearn="codemage learn"
-alias cmforget="codemage forget"
-alias cmread="codemage read"
-alias cmenchant="codemage enchant"
-alias cmsummon="codemage summon"
+alias cast="codemage"
 
 ##########
 # SERVER #
