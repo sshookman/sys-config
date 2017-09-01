@@ -101,7 +101,14 @@ alias stremove="sparktask remove"
 alias sthelp="sparktask help"
 
 ## CodeMage
-alias cast="codemage"
+alias cast="codemage cast"
+alias learn="codemage learn"
+alias forget="codemage forget"
+alias spells="codemage spells"
+alias quests="codemage quests"
+alias summon="codemage summon"
+alias enchant="codemage enchant"
+alias teleport="codemage teleport"
 
 ##########
 # SERVER #
