@@ -110,6 +110,9 @@ alias summon="codemage summon"
 alias enchant="codemage enchant"
 alias teleport="codemage teleport"
 
+## Python
+alias activateenv="source env/bin/activate"
+
 ##########
 # SERVER #
 ########## 
