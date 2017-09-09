@@ -171,7 +171,7 @@ function parse_git_branch() {
         COLOR=`parse_git_status_color`
         echo -e $RESET [$COLOR${PWD##*/} $RESET"|" $COLOR$BRANCH$RESET]
     else
-        echo -e $LIGHT_GREEN $PWD
+        echo -e $RESET [$PWD]
     fi
 }
 
@@ -197,4 +197,4 @@ function parse_git_status_color {
     echo $color
 }
 
-export PS1="$LIGHT_CYAN\u$RESET@$LIGHT_CYAN\h$RESET\`parse_git_branch\`$RESET > "
+export PS1="\e[1m☣\e[0m \e[91mUmbrella\e[0m\e[97mCorporation\e[0m\`parse_git_branch\`\e[0m "
