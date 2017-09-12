@@ -119,7 +119,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sean/.vimpkg/bin:/home/sean/Code/go/bin
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sean/.vimpkg/bin:/home/sean/Code/go/bin:/home/sean/.local/bin
 export GOPATH=/home/sean/Code/go
 export GOROOT=/usr/lib/go
 export ML_PATH=$HOME/study/ml
