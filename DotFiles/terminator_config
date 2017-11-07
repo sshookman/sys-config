@@ -59,18 +59,15 @@
 [plugins]
 [profiles]
   [[default]]
-    audible_bell = True
-    background_darkness = 0.92
+    background_darkness = 0.93
     background_type = transparent
-    cursor_color = "#cc0000"
-    cursor_color_fg = False
-    foreground_color = "#d3d7cf"
-    icon_bell = False
-    palette = "#000000:#cc0000:#ffffff:#cc0000:#ffffff:#cc0000:#ffffff:#ffffff:#000000:#cc0000:#ffffff:#cc0000:#ffffff:#cc0000:#ffffff:#ffffff"
-    scroll_on_output = True
-    scrollback_infinite = True
+    cursor_color = "#ff9900"
+    foreground_color = "#f0f0f0"
+    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
     scrollbar_position = hidden
+    use_system_font = False
     visible_bell = True
+    audible_bell = True
   [[Umbrella]]
     audible_bell = True
     background_darkness = 0.92
