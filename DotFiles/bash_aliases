@@ -2,6 +2,9 @@
 # SYSTEM #
 ##########
 
+## Info
+alias cores="grep -c ^processor /proc/cpuinfo"
+
 ## General 
 alias reload=". ~/.bashrc"
 alias tn="telnet"
