@@ -13,6 +13,7 @@ sudo apt-get install exuberant-ctags
 
 ./install-sudocabulary.sh
 ./install-vim.sh
+./install-terminator.sh
 
 ./linkDotFiles.sh
 ./fix-wifi.sh

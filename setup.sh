@@ -1,5 +1,5 @@
 # Install Git
-sudo apt-get install git-all
+sudo apt-get install git
 
 # Setup Repos
 mkdir ~/Code
