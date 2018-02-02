@@ -5,6 +5,7 @@
 ## Info
 alias cores="grep -c ^processor /proc/cpuinfo"
 alias space="du -sch *"
+alias spaceh="du -sch .[!.]* *"
 
 ## General 
 alias reload=". ~/.bashrc"
