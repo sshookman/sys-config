@@ -12,6 +12,7 @@ alias reload=". ~/.bashrc"
 alias tn="telnet"
 alias glance="glances -t 10"
 alias rmf="rm -rf"
+alias serve="python -m SimpleHTTPServer"
 
 ## Compression
 alias zip="tar -cvf"
