@@ -6,11 +6,11 @@
 alias cores="grep -c ^processor /proc/cpuinfo"
 alias space="du -sch *"
 alias spaceh="du -sch .[!.]* *"
+alias glance="glances -t 10"
 
 ## General 
 alias reload=". ~/.bashrc"
 alias tn="telnet"
-alias glance="glances -t 10"
 alias rmf="rm -rf"
 alias serve="python -m SimpleHTTPServer"
 
@@ -33,7 +33,7 @@ alias moon="curl wttr.in/Moon"
 alias irc="weechat"
 alias tg="~/Code/tg/bin/telegram-cli -N"
 
-## XClip
+## Clipboard
 alias clip="xclip -selection clipboard"
 
 ########
@@ -92,6 +92,18 @@ alias gdcov="gradle clean test jacocoTestReport"
 alias gdmut="gradle clean test pitest"
 alias gdrep="gradle clean test jacocoTestReport pitest"
 
+## Docker
+alias dimg="docker images"
+alias dstats="docker stats"
+alias dlog="docker logs"
+alias dbuild="docker build"
+alias drun="docker run"
+alias dps="docker ps"
+alias dpsa="docker ps -a"
+alias dkill="echo 'Killing Container(s)' ; docker ps -q | xargs docker kill ; echo 'Removing Container(s)' ; docker ps -aq | xargs docker rm"
+alias dwipe="echo ‘Removing Docker Image(s)’ ; docker images -q | xargs docker rmi"
+alias dclean="echo 'Removing Exited Container(s)' ; docker ps -qf 'status=exited' | xargs docker rm ; echo 'Removing Dangling Image(s)' ; docker images -qf 'dangling=true' | xargs docker rmi"
+
 ## Go
 alias goi="go install"
 
@@ -122,18 +134,6 @@ alias activateenv="source env/bin/activate"
 ##########
 # SERVER #
 ########## 
-
-## Docker
-alias dimg="docker images"
-alias dstats="docker stats"
-alias dlog="docker logs"
-alias dbuild="docker build"
-alias drun="docker run"
-alias dps="docker ps"
-alias dpsa="docker ps -a"
-alias dkill="echo 'Killing Container(s)' ; docker ps -q | xargs docker kill ; echo 'Removing Container(s)' ; docker ps -aq | xargs docker rm"
-alias dwipe="echo ‘Removing Docker Image(s)’ ; docker images -q | xargs docker rmi"
-alias dclean="echo 'Removing Exited Container(s)' ; docker ps -qf 'status=exited' | xargs docker rm ; echo 'Removing Dangling Image(s)' ; docker images -qf 'dangling=true' | xargs docker rmi"
 
 ## Resin
 alias rlogin="ssh root@resin.local -p22222"
