@@ -170,10 +170,12 @@ function parse_git_branch() {
     NAME=`git config --local remote.origin.url|sed -n 's#.*/\([^.]*\)\.git#\1#p'`
     if [ ! "${BRANCH}" == "" ]
     then
+        FULL_PATH=$PWD
         COLOR=`parse_git_status_color`
-        echo -e $RESET [$COLOR$NAME$RESET "|" $COLOR$BRANCH$RESET]
+        REPO=${FULL_PATH/$NAME/[$COLOR$NAME$RESET "|" $COLOR$BRANCH$RESET]}
+        echo -e $RESET$REPO
     else
-        echo -e $RESET
+        echo -e $RESET$PWD
     fi
 }
 
@@ -199,6 +201,4 @@ function parse_git_status_color {
     echo $color
 }
 
-#export PS1="\e[1m☣\e[0m \e[91mUMBRELLA\e[0m\e[97mCORPORATION\e[0m\`parse_git_branch\`\e[0m "
-export PS1="\e[96m>> CODE\e[0m\e[97mPOET\e[0m:\w\`parse_git_branch\`\e[0m\e[96m >> \e[0m"
-#export PS1="\e[92m>> OVER\e[0m\e[97mCODE\e[0m\`parse_git_branch\`\e[0m "
+export PS1="\e[96m>> CODE\e[0m\e[97mPOET\e[0m:\`parse_git_branch\`\e[0m\e[96m | \e[0m"
