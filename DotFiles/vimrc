@@ -24,6 +24,9 @@ let g:syntastic_auto_loc_list = 2
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
+""""""""""GIT-GUTTER CONFIG""""""""""""
+let g:gitgutter_diff_base = 'HEAD'
+
 """"""""""""GENERAL CONFIG"""""""""""""
 colorscheme elflord
 syntax on
@@ -32,6 +35,7 @@ set number
 set autoread
 set hlsearch
 set autoread
+set updatetime=100
 
 """"""""""INDENTATION CONFIG""""""""""
 set tabstop=4
