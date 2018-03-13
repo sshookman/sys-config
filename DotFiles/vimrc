@@ -57,12 +57,12 @@ set sidescrolloff=15
 set sidescroll=1
 
 """""""""""""KEY MAPPINGS"""""""""""""
-map <F2> :echo 'Current time is ' . strftime('%c')<CR>
-map <F3> :!sparktask list<CR>
-map <F4> :!codemage spells<CR>
+map <F2> :!git add -A<CR>
+map <F3> :Gstatus<CR>
+map <F4> :Gcommit<CR>
 map <F5> :!codemage cast test<CR>
 map <F6> :!codemage cast build<CR>
 map <F7> :!codemage cast run<CR>
 map <F8> :!codemage cast stop<CR>
-map <F9> :Errors<CR>
-map <F10> :SyntasticReset<CR>
+map <F9> :Gdiff<CR>
+map <F10> :Gblame<CR>
