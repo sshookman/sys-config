@@ -15,20 +15,21 @@ nnoremap <silent> <C-k> <C-w>k
 nnoremap <silent> <C-j> <C-w>j
 
 """""""""""SYNTASTIC CONFIG"""""""""""
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 2
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 2
+"let g:syntastic_check_on_open = 0
+"let g:syntastic_check_on_wq = 0
 
 """"""""""GIT-GUTTER CONFIG""""""""""""
 let g:gitgutter_diff_base = 'HEAD'
 
 """"""""""""GENERAL CONFIG"""""""""""""
-colorscheme elflord
+colorscheme 256-grayvim
+colorscheme Benokai
 syntax on
 
 set number
@@ -58,11 +59,13 @@ set sidescroll=1
 
 """""""""""""KEY MAPPINGS"""""""""""""
 map <F2> :!git add -A<CR>
-map <F3> :Gstatus<CR>
-map <F4> :Gcommit<CR>
+map <F3> :Gcommit<CR>
+map <F4> :Gpush<CR>
 map <F5> :!codemage cast test<CR>
 map <F6> :!codemage cast build<CR>
 map <F7> :!codemage cast run<CR>
 map <F8> :!codemage cast stop<CR>
-map <F9> :Gdiff<CR>
-map <F10> :Gblame<CR>
+map <F9> :Gstatus<CR>
+map <F10> :Gdiff<CR>
+map <F11> :Gblame<CR>
+map <F12> :!echo "\nmap <F2> :!git add -A<CR>\nmap <F3> :Gcommit<CR>\nmap <F4> :Gpush<CR>\nmap <F5> :!codemage cast test<CR>\nmap <F6> :!codemage cast build<CR>\nmap <F7> :!codemage cast run<CR>\nmap <F8> :!codemage cast stop<CR>\nmap <F9> :Gstatus<CR>\nmap <F10> :Gdiff<CR>\nmap <F11> :Gblame<CR>\n"<CR>
