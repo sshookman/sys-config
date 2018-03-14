@@ -9,6 +9,7 @@ alias spaceh="du -sch .[!.]* *"
 alias glance="glances -t 10"
 
 ## General 
+alias ll="paste <(ls -ld --color=always *) <(for i in *; do if [ -d "$i"/.git ] ; then echo "($(git --git-dir="$i"/.git symbolic-ref --short HEAD))"; else echo; fi; done)"
 alias reload=". ~/.bashrc"
 alias tn="telnet"
 alias rmf="rm -rf"
