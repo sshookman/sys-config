@@ -21,8 +21,7 @@ alias unzip="tar -xvf"
 
 ## Directories
 alias code="cd ~/Code"
-alias config="cd ~/Code/SysConfig"
-alias sandbox="cd ~/Code/Sandbox"
+alias config="cd ~/Code/sys-config"
 
 ## World
 alias clock="date +%H:%M"
