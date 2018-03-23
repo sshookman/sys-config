@@ -23,6 +23,7 @@ nnoremap <silent> <C-j> <C-w>j
 "let g:syntastic_auto_loc_list = 2
 "let g:syntastic_check_on_open = 0
 "let g:syntastic_check_on_wq = 0
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
 
 """"""""""GIT-GUTTER CONFIG""""""""""""
 let g:gitgutter_diff_base = 'HEAD'
