@@ -7,6 +7,10 @@ for file in $files; do
     ln -sf $path/../DotFiles/$file ~/.$file
 done
 
+if [ ! -d "~/.weechat" ]; then
+    mkdir ~/.weechat
+fi
+
 for wfile in $weechat_files; do
     echo "Linking Weechat Config $wfile"
     ln -sf $path/../DotFiles/weechat/$wfile ~/.weechat/$wfile
