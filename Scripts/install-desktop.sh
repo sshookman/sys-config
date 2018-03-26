@@ -1,6 +1,6 @@
-sudo apt-get install golang-go
-sudo apt-get install unity-tweak-tool
-sudo apt-get install synapse
+sudo apt-get --yes --force-yes install golang-go
+sudo apt-get --yes --force-yes install unity-tweak-tool
+sudo apt-get --yes --force-yes install synapse
 
 ./install-terminator.sh
 ./install-telegram.sh
