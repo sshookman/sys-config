@@ -30,7 +30,7 @@ let g:gitgutter_diff_base = 'HEAD'
 
 """"""""""""GENERAL CONFIG"""""""""""""
 colorscheme 256-grayvim
-colorscheme Benokai
+colorscheme blackboard
 syntax on
 
 set number
