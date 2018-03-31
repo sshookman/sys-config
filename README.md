@@ -1,4 +1,4 @@
-System Configuration for Ubuntu Linux 16.04 LTS
+System Configuration for Linux (Ubuntu/Pop!\_OS)
 ---
 
 ### Install

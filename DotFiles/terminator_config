@@ -59,7 +59,8 @@
 [plugins]
 [profiles]
   [[default]]
-    background_darkness = 0.93
+    audible_bell = True
+    background_darkness = 0.8
     background_type = transparent
     cursor_color = "#ff9900"
     foreground_color = "#f0f0f0"
@@ -67,7 +68,6 @@
     scrollbar_position = hidden
     use_system_font = False
     visible_bell = True
-    audible_bell = True
   [[Umbrella]]
     audible_bell = True
     background_darkness = 0.92
