@@ -166,14 +166,15 @@ BG_WHITE="\e[107m"
 # Prompt Config
 # get current branch in git repo
 function parse_git_branch() {
-    BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
-    NAME=`git config --local remote.origin.url|sed -n 's#.*/\([^.]*\)\.git#\1#p'`
-    if [ ! "${BRANCH}" == "" ]
-    then
-        FULL_PATH=$PWD
-        COLOR=`parse_git_status_color`
-        REPO=${FULL_PATH/$NAME/[$COLOR$NAME$RESET "|" $COLOR$BRANCH$RESET]}
-        echo -e $RESET$REPO
+    if [ -d ".git" ]; then
+        BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
+        NAME=`git config --local remote.origin.url|sed -n 's#.*/\([^.]*\)\.git#\1#p'`
+        if [ ! "${BRANCH}" == "" ]; then
+            FULL_PATH=$PWD
+            COLOR=`parse_git_status_color`
+            REPO=${FULL_PATH/$NAME/[$COLOR$NAME$RESET "|" $COLOR$BRANCH$RESET]}
+            echo -e $RESET$REPO
+        fi
     else
         echo -e $RESET$PWD
     fi
