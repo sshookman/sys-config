@@ -74,6 +74,7 @@ alias gpa="git apply"
 alias gco="git checkout"
 alias glog="git log --graph  --decorate --source --all --oneline"
 alias gundo="git diff --name-only | xargs git checkout"
+alias gcundo="git reset HEAD~1 --soft"
 
 ## Maven
 alias m="mvn"
