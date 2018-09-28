@@ -38,6 +38,10 @@ set autoread
 set hlsearch
 set autoread
 set updatetime=100
+set colorcolumn=145
+highlight ColorColumn ctermbg=darkgray
+
+autocmd BufNewFile,BufRead *.md set filetype=markdown
 
 """"""""""INDENTATION CONFIG""""""""""
 set tabstop=4
