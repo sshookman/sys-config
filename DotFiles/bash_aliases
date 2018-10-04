@@ -143,4 +143,4 @@ alias rlogin="ssh root@resin.local -p22222"
 alias rdeploy="rdt push resin.local -s . --skip-logs"
 
 ## Droplet
-alias dplogin="ssh root@162.243.62.166"
+alias codepoet="ssh root@162.243.62.166"
