@@ -8,7 +8,7 @@
   title_transmit_bg_color = "#000000"
   title_transmit_fg_color = "#00cccc"
   window_state = fullscreen
-  font = Monospace 9
+  font = Monospace 12
 [keybindings]
   go_down = <Alt>j
   go_left = <Alt>h
@@ -61,8 +61,7 @@
 [profiles]
   [[default]]
     audible_bell = True
-    background_darkness = 0.8
-    background_type = transparent
+    background_darkness = 0.4
     cursor_color = "#ff9900"
     foreground_color = "#f0f0f0"
     palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"

@@ -144,3 +144,10 @@ alias rdeploy="rdt push resin.local -s . --skip-logs"
 
 ## Droplet
 alias codepoet="ssh root@162.243.62.166"
+
+########
+# MUDS #
+########
+
+alias epitaph-mud="telnet epitaphonline.co.uk 6789"
+alias aardwolf-mud="telnet aardmud.org"
