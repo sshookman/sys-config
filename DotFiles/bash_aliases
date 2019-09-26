@@ -60,6 +60,7 @@ alias gpullr="git pull --rebase"
 alias gspull="git add -A; git stash save; git pull; git stash pop; git add -A"
 alias gspullr="git add -A; git stash save; git pull --rebase; git stash pop; git add -A"
 alias gpush="git push"
+alias gpushu='git branch 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \(.*\)/\1/" | xargs git push -u origin'
 alias greset="git reset HEAD~"
 alias gwipe="git reset --hard && git clean -df"
 alias gdiff="git diff"
