@@ -15,6 +15,7 @@ alias tn="telnet"
 alias rmf="rm -rf"
 alias serve="python -m SimpleHTTPServer"
 alias cleanup="apt-get autoremove && apt-get clean"
+alias stree='pwd | xargs tree -CFh --dirsfirst'
 
 ## Compression
 alias zip="tar -cvf"
