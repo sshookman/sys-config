@@ -133,6 +133,12 @@ alias summon="codemage summon"
 alias enchant="codemage enchant"
 alias teleport="codemage teleport"
 
+## Skelebot
+alias sb="skelebot"
+alias sbh="skelebot --help"
+alias sbn="skelebot --native"
+alias sbs="skelebot --skip-build"
+
 ## Python
 alias activateenv="source env/bin/activate"
 
