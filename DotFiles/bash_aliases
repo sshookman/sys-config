@@ -16,6 +16,7 @@ alias rmf="rm -rf"
 alias serve="python -m SimpleHTTPServer"
 alias cleanup="apt-get autoremove && apt-get clean"
 alias stree='pwd | xargs tree -CFh --dirsfirst'
+alias clr="clear && ~/.vocab"
 
 ## Compression
 alias zip="tar -cvf"
@@ -37,6 +38,9 @@ alias tg="~/Code/tg/bin/telegram-cli -N"
 
 ## Clipboard
 alias clip="xclip -selection clipboard"
+
+## Word of the Session
+alias vocab="~/.vocab"
 
 ########
 # CODE #
